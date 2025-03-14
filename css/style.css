@@ -1,0 +1,137 @@
+/* 
+=======================
+Estilização global 
+=======================
+*/
+
+body {
+  font-family: Arial, Helvetica, sans-serif; /* Altera o tipo de fonte presente no documento */
+  background-color: #f7f7f7;
+  display: grid;
+  justify-items: center;
+  margin: 0px;
+  gap: 60px;
+  margin-top: 60px;
+}
+
+p {
+  font-size: 20px; /* Alterando o tamanho dos parágrafos de 16px para 20px */
+}
+
+a {
+  text-decoration: none; /* Tira qualquer decoração que tenha na tag a */
+}
+
+img {
+  max-width: 100%; /* Evita o overflow, a img ocupa 100% do elemento pai */
+  display: block; /*Faz com que a imagem se comporte sempre como um bloco, ou seja do inicio ao fim do container.*/
+}
+
+li {
+  list-style: none; /*  */
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin: 0px;
+}
+
+/* 
+=======================
+Estilização do header 
+=======================
+*/
+
+.menu {
+  display: flex; /* Alinha os itens na horizontal */
+  gap: 20px; /*  Cria um distânciamento entre os itens */
+}
+
+.menu a {
+  background-color: #ffffff;
+  padding: 15px 30px; /* Espaçamento interno, quando utilizamos o atalho padding com dois valores, o primeiro valor é para cima/baixo e o segundo valor para direita/esquerda */
+  border-radius: 4px; /* Arredonda as laterais da borda */
+  color: #000000;
+  text-transform: uppercase; /* Deixa o texto com letras maiúsculas  */
+}
+
+.menu a:hover {
+  background-color: #ee2211;
+  color: #ffffff;
+}
+
+/* 
+=======================
+Estilização do Conteúdo 
+=======================
+*/
+
+.conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1000px;
+}
+
+.introducao {
+  background-color: #ffffff;
+  padding: 40px;
+  text-align: right;
+  display: grid;
+  align-content: center;
+  justify-items: end;
+  gap: 20px;
+}
+
+.subtitulo {
+  font-size: 64px;
+  text-transform: uppercase;
+  padding: 40px;
+  color: rgba(0, 0, 0, 0.2);
+  text-align: end;
+  align-self: center;
+}
+
+.botao {
+  background-color: #ee2211;
+  color: #ffffff;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  border-radius: 4px;
+}
+
+/* 
+=========================
+Estilização das Vantagens 
+=========================
+*/
+
+.vantagens {
+  background-color: #ffffff;
+  padding: 40px;
+}
+
+.vantagens-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px 20px;
+  padding: 20px;
+}
+
+.vantagens-item p {
+  grid-column: 2;
+}
+
+/* 
+=========================
+Estilização do rodape 
+=========================
+*/
+.rodape {
+  background-color: #ffffff;
+  padding: 40px;
+  text-align: center;
+  width: 100%; /* Faz com que o elemento atual fique 100% do tamanho do elemento pai (Você não está utilizando display)*/
+  box-sizing: border-box;
+}
